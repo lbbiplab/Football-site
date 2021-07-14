@@ -2,9 +2,11 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
+/* top acrea backgroud  */
 .top-section{
     background-color: #2d25a0;
 }
+/* menu bar  */
 .menu-bar{
     display: flex;
     align-items: center;
@@ -29,6 +31,7 @@ body{
 .log-out p{
     margin: 0;
 }
+/* Top area  */
 .top-area{
     display: flex;
     align-items: center;
@@ -60,7 +63,7 @@ h1{
     color: white;
 }
 
-
+/* player name and details  */
 .blog{
     width: 340px;
     height: 520px;
@@ -111,6 +114,7 @@ h1{
 .company-logo img{
     width: 70%;
 }
+/* footer area  */
 .footer-area {
     display: flex;
     flex-direction: column; 
@@ -124,4 +128,24 @@ h1{
     font-size: 30px;
     padding-right: 10px;
     color: rgba(128, 128, 128, 0.637);
+}
+@media only screen and ( max-width:688px) {
+    .header-area{
+     display: none;
+    }
+    .log-out {
+        display: none;
+        
+    }
+    .top-area{
+        flex-direction: column;
+       width: 100%;
+        
+    }
+    .mid-area{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
